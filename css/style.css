@@ -351,6 +351,9 @@ footer p {
 .nav-links {
   display: flex;
   gap: 25px;
+  list-style: none;      /* REMOVE os pontos */
+  padding: 0;
+  margin: 0;
 }
 
 .menu-toggle {
@@ -377,17 +380,20 @@ footer p {
     gap: 15px;
     padding: 20px;
     display: none;
-    list-style: none;      /* REMOVE os pontos */
-    padding: 0;
-    margin: 0;
+    
   }
-  .nav-links li {
-  list-style: none;
-}
 
   .nav-links.active {
     display: flex;
   }
+}
+.nav-links li::before,
+.nav-links li::after {
+  content: none !important;
+  display: none !important;
+}
+.nav-links li {
+  list-style: none !important;
 }
 
 
