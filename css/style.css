@@ -342,6 +342,47 @@ footer p {
   padding: 120px 0;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
 
 
 
