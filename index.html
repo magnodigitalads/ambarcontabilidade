@@ -29,8 +29,7 @@
     </div>
 
     <nav class="navbar">
-  <img src="img/logo.png" class="logo">
-
+  
   <ul class="nav-links">
     <li><a href="#sobre">Quem Somos</a></li>
     <li><a href="#servicos">Serviços</a></li>
@@ -151,6 +150,14 @@
       <p>© 2025 Contabilidade Âmbar. Todos os direitos reservados.</p>
     </div>
   </footer>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', function () {
+    menu.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
