@@ -336,3 +336,37 @@ footer {
 .section-content p {
   text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
+
+.hero {
+  position: relative;
+  min-height: 90vh;
+
+  background-image: url("../imagens/contabilidade-estrategica.jpg"); /* sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+/* camada escura para dar contraste no texto */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* garante que o texto fique acima da imagem */
+.hero .container {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+/* melhora a leitura */
+.hero h1,
+.hero p {
+  text-shadow: 0 3px 8px rgba(0,0,0,0.7);
+}
