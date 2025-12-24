@@ -202,6 +202,7 @@ section p {
 
 .contact-info {
   margin-bottom: 40px;
+  
 }
 
 .contact-info h3 {
@@ -211,6 +212,7 @@ section p {
   color: black;
   margin-bottom: 20px;
   letter-spacing: 3px;
+  
 }
 
 .contact-info p {
@@ -226,7 +228,7 @@ section p {
 
 .contact-info a:hover {
   text-decoration: underline;
-}
+  }
 
 
 /* FOOTER */
@@ -257,17 +259,7 @@ footer p {
     justify-content: center;
   }
 }
-/* INSTAGRAM VIDEO EMBED */
-.instagram-embed {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
 
-.instagram-embed blockquote {
-  border-radius: 12px !important;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
 
 .page-hero {
   padding: 80px 20px;
